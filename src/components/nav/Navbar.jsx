@@ -1,7 +1,12 @@
-import React from 'react';
+import Logo from '../logo/Logo';
 
 const Navbar = () => {
-  return <div></div>;
+  return (
+    <div className='flex justify-between'>
+      <Logo />
+      <div>jnhhk</div>
+    </div>
+  );
 };
 
 export default Navbar;
