@@ -12,11 +12,11 @@ const MyContext = ({ children }) => {
   useEffect(() => {
     axios
       .get(`https://perenual.com/api/species-list?key=${apiKey}`)
-      .then(() => {
-        console.log(res);
-        setApiData(res);
+      .then((res) => {
+        setApiData(res.data.data);
       });
   }, []);
+  console.log(apiData);
 
   return (
     <apiContext.Provider value={{ apiData }}>{children}</apiContext.Provider>
