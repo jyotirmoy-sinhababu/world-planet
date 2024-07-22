@@ -9,7 +9,7 @@ const PlantCnt = () => {
       {apiData ? (
         apiData?.map((item) => {
           return (
-            <div key={item.id}>
+            <div key={item.id} className='sm:mt-[4%] mt-[2%]'>
               <PlantList data={item} />
             </div>
           );
